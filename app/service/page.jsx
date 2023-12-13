@@ -60,7 +60,7 @@ export default function  Page(){
                             Our Service Breakdown
                         </h3>
                         <p className="mt-3">
-                            At QUIRA, we're committed to delivering IT services that not only meet but exceed your expectations. With a focus on quality, expertise, innovation, reliability, and adaptability, we're here to empower your business with cutting-edge technology solutions.
+                            At QUIRA, we are committed to delivering IT services that not only meet but exceed your expectations. With a focus on quality, expertise, innovation, reliability, and adaptability, we are here to empower your business with cutting-edge technology solutions.
                         </p>
                     </div>
                     <div className="mt-12">
