@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Feature_AE(){
+export default function Feature(){
         const features = [
             {
                 title: "Fast Refresh",

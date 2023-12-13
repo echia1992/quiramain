@@ -1,12 +1,15 @@
-import Image from 'next/image'
-import Hero_AE from "@/components/Hero_AE";
-import Feature_AE from "@/components/Feature_AE";
+import Hero from "@/components/Hero";
+import Feature from "@/components/Feature";
+import {Team} from "@/components/Team";
+import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Hero_AE />
-     <Feature_AE/>
+      <Hero />
+     <Feature/>
+        <Team/>
+        <ContactSection/>
     </main>
   )
 }

@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 
-const Hero_AE =()=> {
+const Hero =()=> {
 
         return (
             <div>
@@ -97,4 +97,4 @@ const Hero_AE =()=> {
 
 }
 
-export default Hero_AE;
+export default Hero;
