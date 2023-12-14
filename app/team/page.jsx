@@ -79,7 +79,7 @@ export default function TeamSection() {
                         width={100}
                         height={100}
                         className="w-full h-full object-cover object-center shadow-md rounded-xl"
-                        alt="" />
+                        alt="cto" />
                 </div>
                 <div className="mt-4">
                     <h4 className="text-lg text-gray-700 font-semibold">{member.name}</h4>
