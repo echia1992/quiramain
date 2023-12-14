@@ -79,24 +79,24 @@ export function Team() {
                         width={100}
                         height={100}
                         className="w-full h-full object-cover object-center shadow-md rounded-xl"
-                        alt="" />
+                        alt="cto"/>
                 </div>
                 <div className="mt-4">
                     <h4 className="text-lg text-gray-700 font-semibold">{member.name}</h4>
                     <p className="text-indigo-600">{member.title}</p>
                     <p className="text-gray-600 mt-2">
                         {isExpanded ? member.desc : `${member.desc.slice(0, 40)}...`}
-                        {!isExpanded?(
+                        {!isExpanded ? (
                             <button
                                 className="text-indigo-600 cursor-pointer focus:outline-none"
                                 onClick={toggleExpand}
                             >
                                 Read More
                             </button>
-                        ): (
+                        ) : (
                             <button
                                 className="text-indigo-600 cursor-pointer focus:outline-none"
-                                onClick={()=>setIsExpanded(!toggleExpand)}
+                                onClick={() => setIsExpanded(!toggleExpand)}
                             >
                                 close
                             </button>
@@ -156,7 +156,7 @@ export function Team() {
     return (
         <section className="py-14">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                <div className=" text-center justify-center grid" >
+                <div className=" text-center justify-center grid">
                     <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl ">
                         Meet our team of Engineers, designers, and product managers.
                     </h3>
