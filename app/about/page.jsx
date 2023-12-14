@@ -5,7 +5,7 @@ export default function AboutPage() {
         <>
             <section className="about-section !gap-8 !space-x-3 grid ">
                 <div className="image-container ">
-                    <Image className="!rounded-md !gap-8 !space-x-3" src="/images/system.jpg" alt="Profile Image"
+                    <Image className="!rounded-md !gap-8 !space-x-3" src="/Images/system.jpg" alt="Profile Image"
                            width={600} height={600}/>
                 </div>
                 <div className="text-container grid">
