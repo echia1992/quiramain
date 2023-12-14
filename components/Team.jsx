@@ -18,52 +18,52 @@ export function Team() {
                 twitter: "echiaanthony",
                 github: "echia1992"
             },
-            {
-                avatar: "https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80",
-                name: "Micheal colorand",
-                title: "Software engineer",
-                desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
-                linkedin: "javascript:void(0)",
-                twitter: "javascript:void(0)",
-
-                github: "javascript:void(0)"
-            },
-            {
-                avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-                name: "Brown Luis",
-                title: "Full stack engineer",
-                desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
-                linkedin: "javascript:void(0)",
-                twitter: "javascript:void(0)",
-                github: "javascript:void(0)"
-            },
-            {
-                avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-                name: "Lysa sandiago",
-                title: "Head of designers",
-                desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
-                linkedin: "javascript:void(0)",
-                twitter: "javascript:void(0)",
-                github: "javascript:void(0)"
-            },
-            {
-                avatar: "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-                name: "Daniel martin",
-                title: "Product designer",
-                desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
-                linkedin: "javascript:void(0)",
-                twitter: "javascript:void(0)",
-                github: "javascript:void(0)"
-            },
-            {
-                avatar: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
-                name: "Vicky tanson",
-                title: "Product manager",
-                desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
-                linkedin: "javascript:void(0)",
-                twitter: "javascript:void(0)",
-                github: "javascript:void(0)"
-            },
+            // {
+            //     avatar: "https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80",
+            //     name: "Micheal colorand",
+            //     title: "Software engineer",
+            //     desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
+            //     linkedin: "javascript:void(0)",
+            //     twitter: "javascript:void(0)",
+            //
+            //     github: "javascript:void(0)"
+            // },
+            // {
+            //     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            //     name: "Brown Luis",
+            //     title: "Full stack engineer",
+            //     desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
+            //     linkedin: "javascript:void(0)",
+            //     twitter: "javascript:void(0)",
+            //     github: "javascript:void(0)"
+            // },
+            // {
+            //     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            //     name: "Lysa sandiago",
+            //     title: "Head of designers",
+            //     desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
+            //     linkedin: "javascript:void(0)",
+            //     twitter: "javascript:void(0)",
+            //     github: "javascript:void(0)"
+            // },
+            // {
+            //     avatar: "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            //     name: "Daniel martin",
+            //     title: "Product designer",
+            //     desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
+            //     linkedin: "javascript:void(0)",
+            //     twitter: "javascript:void(0)",
+            //     github: "javascript:void(0)"
+            // },
+            // {
+            //     avatar: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+            //     name: "Vicky tanson",
+            //     title: "Product manager",
+            //     desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
+            //     linkedin: "javascript:void(0)",
+            //     twitter: "javascript:void(0)",
+            //     github: "javascript:void(0)"
+            // },
         ]
     const TeamMember = ({ member }) => {
         const [isExpanded, setIsExpanded] = useState(false);
@@ -74,7 +74,12 @@ export function Team() {
         return (
             <li>
                 <div className="w-full h-60 sm:h-52 md:h-56">
-                    <img src={member.avatar} className="w-full h-full object-cover object-center shadow-md rounded-xl" alt="" />
+                    <Image
+                        src={member.avatar}
+                        width={100}
+                        height={100}
+                        className="w-full h-full object-cover object-center shadow-md rounded-xl"
+                        alt="" />
                 </div>
                 <div className="mt-4">
                     <h4 className="text-lg text-gray-700 font-semibold">{member.name}</h4>

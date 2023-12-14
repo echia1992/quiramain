@@ -7,3 +7,19 @@ body{
   position: relative;
   min-height: 100vh;
 }
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  margin-right: 10px;
+}
+
+.image-container {
+  overflow: hidden;
+
+}
+
+.text-container {
+  max-width: 600px;
+}
