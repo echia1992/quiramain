@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function TeamSection() {
     const team = [
         {
-            avatar: "/Images/CEO.png",
+            avatar: "https://res.cloudinary.com/quiratech/image/upload/v1702636059/enuhkfc0fg58ic8lb2pt.png",
             name: "Anthony A Echia",
             title: "CTO",
             desc: "As the Chief Technical Officer with extensive expertise in nine programming languages, I embarked on my professional journey from the grassroots, initially serving as a store assistant at So Fresh restaurants. During my tenure, I swiftly identified my passion for technology, particularly in the realm of Web development.\n" +

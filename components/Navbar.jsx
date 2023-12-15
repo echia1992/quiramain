@@ -4,8 +4,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { RxCross1 } from 'react-icons/rx';
 import { IoMenuOutline } from 'react-icons/io5';
+import {usePathname} from "next/navigation";
 
 const Navbar = () => {
+    const pathname = usePathname()
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const navigation = [
@@ -35,11 +37,11 @@ const Navbar = () => {
                         <Image className='rounded-full' width='40' height='40' src='/Images/logo.png' alt='logo' />
                     </div>
                 </Link>
-                <nav className='hidden sm:flex items-center gap-3'>
+                <nav className='hidden sm:flex items-center gap-3 text-slate-50'>
                     <div className='flex items-center md:flex'>
                         <ul className='hidden sm:justify-center items-center space-y-6 md:flex md:space-x-6 md:space-y-0'>
                             {navigation.map((item, idx) => (
-                                <li key={idx} className='text-gray-50 hover:text-blue-900'>
+                                <li key={idx} className={`${pathname ===item.link? 'border-b-2 border-purple-700 hover:text-blue-900' : ""}`}>
                                     <Link href={item.link}>{item.title}</Link>
                                 </li>
                             ))}

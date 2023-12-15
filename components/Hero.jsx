@@ -7,14 +7,20 @@ const Hero =()=> {
     const [currentImage, setCurrentImage] = useState(0);
 
     const images = [
-        '/Images/business.jpg',
-        '/Images/computer.jpg',
-        '/Images/imaged.jpg',
-        '/Images/system.jpg',
-        '/Images/system1.jpg',
-        '/Images/system3.jpg',
-        '/Images/web.jpg',
-        '/Images/system2.jpg',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636420/qbgthki2ayyqwdo6sf3i.jpg',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636420/j7tkc4ldp6gkjda7lseb.jpg',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636420/oycuame7jdzo8eyy23tz.png',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636420/lkaed14x3bgmnicwnjpk.jpg',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636420/fhwjvu0zim3webxswebl.jpg',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636420/ti4vc3tvqqnlos9uzujz.jpg',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636730/5467426_1720_wzhsmm.jpg',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636730/5467393_1687_vmwutc.jpg',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636729/17053962_5815402_wdxotc.jpg',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636729/man-working-with-computer-side-view_gdkldv.jpg',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636728/16683353_5757453_fjomij.jpg',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636728/business-woman-working-office_csuhoz.jpg',
+        'https://res.cloudinary.com/quiratech/image/upload/v1702636420/qbgthki2ayyqwdo6sf3i.jpg',
+        // '/Images/system2.jpg',
 
         // Add more image URLs as needed
     ];
