@@ -1,6 +1,7 @@
+"use client";
 import Hero from "@/components/Hero";
 import Feature from "@/components/Feature";
-import {Team} from "@/components/Team";
+import { Team } from "@/components/Team";
 import ContactSection from "@/components/ContactSection";
 import CustomerHappy from "@/components/CustomerHappy";
 
@@ -8,10 +9,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Hero />
-     <Feature/>
-        <Team/>
-        <CustomerHappy/>
-        <ContactSection/>
+      <Feature />
+      <Team />
+      <CustomerHappy />
+      <ContactSection />
     </main>
-  )
+  );
 }
