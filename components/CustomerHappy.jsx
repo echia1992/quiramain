@@ -1,9 +1,7 @@
-"use client"
-import { useEffect } from 'react';
 import CountUp from 'react-countup';
 import Image from 'next/image';
 
-export default function CustomerHappy() {
+const  CustomerHappy = ()=> {
     const stats = [
         {
             data: 30,
@@ -101,13 +99,13 @@ export default function CustomerHappy() {
                         <div>
                             <h3 className="text-2xl font-bold text-gray-800">What Our Clients Say</h3>
                             <p className="mt-4 text-gray-600">
-                                Our client-first approach has earned us the trust of businesses across industries. Here's what some of our clients have to say about working with us.
+                                Our client-first approach has earned us the trust of businesses across industries. Here&apos;s what some of our clients have to say about working with us.
                             </p>
                             
                             <div className="mt-8 space-y-6">
                                 {testimonials.map((testimonial, index) => (
                                     <div key={index} className="bg-gray-50 p-4 rounded-lg">
-                                        <p className="italic text-gray-600">"{testimonial.quote}"</p>
+                                        <blockquote className="italic text-gray-500 text-sm">&quot;{testimonial.quote}&ldquo; </blockquote>
                                         <div className="mt-4 flex items-center">
                                             <div className="flex-shrink-0">
                                                 <Image 
@@ -166,6 +164,8 @@ export default function CustomerHappy() {
         </section>
     );
 }
+
+export default CustomerHappy;
 
 // "use client"
 // import CountUp from 'react-countup';

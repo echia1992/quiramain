@@ -1,9 +1,8 @@
 "use client"
-
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-export default function Feature() {
+ const Feature =()=> {
     const [activeTab, setActiveTab] = useState('all');
     
     const categories = [
@@ -108,7 +107,7 @@ export default function Feature() {
                         Comprehensive Solutions for Your Business Growth
                     </h2>
                     <p className="text-gray-600 mt-4">
-                        Through meticulous business analysis and collaborative sessions, we align every aspect of our solutions with your business logic, creating tailored software that enhances your core operations.
+                        Through meticulous business analysis and collaborative sessions&#44; we align every aspect of our solutions with your business logic&#44; creating tailored software that enhances your core operations.
                     </p>
                 </div>
 
@@ -183,7 +182,7 @@ export default function Feature() {
                         Ready to transform your business?
                     </h3>
                     <p className="mt-3 text-gray-600">
-                        Let's discuss how our services can address your unique challenges.
+                        Let&apos;s discuss how our services can address your unique challenges.
                     </p>
                     <div className="mt-6">
                         <Link href="/contact" className="inline-block px-6 py-3 text-center text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow transition duration-150">
@@ -195,6 +194,7 @@ export default function Feature() {
         </section>
     );
 }
+export default Feature;
 
 // import React from 'react';
 

@@ -1,5 +1,4 @@
-"use client"
-export default function ContactSection() {
+ const ContactSection =() =>{
 
         const contactMethods = [
             {
@@ -110,4 +109,6 @@ export default function ContactSection() {
                 </div>
             </main>
         )
-    }
+}
+    
+export default ContactSection;

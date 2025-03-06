@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-export function Team() {
+const Team =()=> {
     // Current team members
     const team = [
         {
@@ -175,7 +175,7 @@ export function Team() {
                             <div>
                                 <h3 className="text-2xl font-bold mb-4">Join Our Growing Team</h3>
                                 <p className="mb-6 text-indigo-100">
-                                    We're always looking for talented individuals who are passionate about technology and innovation. Join us in building cutting-edge solutions for clients around the world.
+                                    We&apos;re always looking for talented individuals who are passionate about technology and innovation. Join us in building cutting-edge solutions for clients around the world.
                                 </p>
                                 <div className="mb-8">
                                     <h4 className="text-lg font-semibold mb-3">Current Openings:</h4>
@@ -212,6 +212,9 @@ export function Team() {
         </section>
     );
 }
+
+export default Team;
+
 // "use client"
 // import {useState} from "react";
 // import Link from "next/link";

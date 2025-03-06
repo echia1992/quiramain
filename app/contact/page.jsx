@@ -1,5 +1,4 @@
 "use client"
-import Link from "next/link";
 
 export default function ContactSection() {
 
@@ -45,7 +44,7 @@ export default function ContactSection() {
                             Let us know how we can help to transform your business
                         </p>
                         <p>
-                            We’re here to help and answer any question you might have, We look forward to hearing from you! Please fill out the form, or use the contact information bellow .
+                            We&pos;re here to help and answer any question you might have, We look forward to hearing from you! Please fill out the form, or use the contact information bellow .
                         </p>
                         <div>
                             <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">

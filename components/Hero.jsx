@@ -16,13 +16,13 @@ const Hero = () => {
     ];
 
     // Clients logos (placeholder for now)
-    const clientLogos = [
-        { name: "Client 1", logo: "/api/placeholder/120/40" },
-        { name: "Client 2", logo: "/api/placeholder/120/40" },
-        { name: "Client 3", logo: "/api/placeholder/120/40" },
-        { name: "Client 4", logo: "/api/placeholder/120/40" },
-        { name: "Client 5", logo: "/api/placeholder/120/40" },
-    ];
+    // const clientLogos = [
+    //     { name: "Client 1", logo: "/api/placeholder/120/40" },
+    //     { name: "Client 2", logo: "/api/placeholder/120/40" },
+    //     { name: "Client 3", logo: "/api/placeholder/120/40" },
+    //     { name: "Client 4", logo: "/api/placeholder/120/40" },
+    //     { name: "Client 5", logo: "/api/placeholder/120/40" },
+    // ];
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -99,6 +99,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
 // "use client";
 
 // import React, {useEffect, useState} from 'react';

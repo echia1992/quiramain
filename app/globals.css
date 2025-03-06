@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body{
+body {
   position: relative;
   min-height: 100vh;
 }
@@ -17,7 +16,6 @@ body{
 
 .image-container {
   overflow: hidden;
-
 }
 
 .text-container {

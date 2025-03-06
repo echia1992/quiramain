@@ -1,65 +1,4 @@
-// import Image from "next/image";
 
-// export default function AboutPage() {
-//     return (
-//         <>
-//             <section className="about-section !gap-8 !space-x-3 grid ">
-//                 <div className="image-container ">
-//                     <Image className="!rounded-md !gap-8 !space-x-3" src="/Images/system.jpg" alt="Profile Image"
-//                            width={600} height={600}/>
-//                 </div>
-//                 <div className="text-container grid">
-//                     <h5 className='text-purple-600'>Welcome to Quira Resource Tech</h5>
-//                     <p className='text-sm'>
-//                          where our journey began with a commitment to excellence and a
-//                         deep passion for technology. Originating from humble beginnings at So Fresh restaurants, we
-//                         quickly identified the transformative potential of technology, especially in the field of
-//                         Software development.
-
-//                         As we evolved, so did our vision. Today, at the heart of QuiraTech lies a sophisticated software
-//                         architecture meticulously crafted to prioritize customer satisfaction. Our innovative approach
-//                         ensures that our solutions not only capture every business requirement but also go beyond,
-//                         anticipating future needs and adapting to the ever-changing landscape of technology.
-
-//                         {/* eslint-disable-next-line react/no-unescaped-entities */}
-//                         QuiraTech is more than a technology firm; it's a hub of creativity and problem-solving. Our
-//                         commitment to continuous growth and technical excellence has propelled us to the forefront of
-//                         the industry. By blending our expertise in nine programming languages with a keen understanding
-//                         of business dynamics, we have become synonymous with cutting-edge solutions and unparalleled
-//                         innovation.
-
-//                         {/* eslint-disable-next-line react/no-unescaped-entities */}
-//                         Join us on this exciting journey as we continue to push the boundaries of what's possible in the
-//                         tech realm. At Quira Resource Tech, we are not just building software; we are shaping the future
-//                         of technology.
-//                     </p>
-//                     {/* Add more paragraphs as needed */}
-//                 </div>
-
-//             </section>
-//             <div className='grid justify-center items-center px-6 py-8'>
-//                 <h4 className=' flex text-pink-400 !justify-center !items-center '>SERVICE STATEMENT PROMISES FOR QUIRA </h4>
-//                 <p className='text-sm py-4 px-6'>
-//                     <span className='text-lime-600 text-2xl'>  Q</span> = Quality Solutions: At QUIRA, we provide top-notch IT solutions that prioritize quality and excellence in every aspect of our services.
-//                 </p>
-//                 <p className='text-sm py-4 px-6'>
-//                     <span className='text-Blue-600 text-2xl'>  U</span>=Unparalleled Expertise: Our team consists of highly skilled professionals with a deep understanding of the latest technologies and industry trends.
-//                 </p>
-//                 <p className='text-sm py-4 px-6'>
-//                     <span className='text-purple-600 text-2xl'>I</span>= Innovative Approach: We pride ourselves on our innovative mindset, constantly seeking out new and creative solutions to meet the evolving needs of our clients.
-//                 </p>
-//                 <p className='text-sm py-4 px-6'>
-
-//                    <span className='text-green-300 text-2xl'>R</span>	= Reliable Support: We offer reliable and responsive support to ensure that your systems run smoothly, and your business operations stay uninterrupted.
-//                 </p>
-//                 <p className='text-sm py-4 px-6'>
-//                     {/* eslint-disable-next-line react/no-unescaped-entities */}
-//                     <span className='text-cyan-500 text-2xl'>  A</span>= Adaptive Solutions: We understand that every business is unique. That's why we tailor our services to fit your specific requirements and goals.
-//                 </p>
-//             </div>
-//         </>
-// )
-// }
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -121,7 +60,7 @@ export default function About() {
                             Transforming Businesses Through Technology
                         </h1>
                         <p className="text-gray-600 mb-8">
-                            Quira Resource is a leading technology company dedicated to helping businesses thrive in the digital age. With our team of expert developers, designers, and consultants, we deliver innovative solutions that drive growth and success.
+                            Quira Resource is a leading technology company dedicated to helping businesses thrive in the digital age. With our team of expert developers&#44; designers&#44; and consultants&#44; we deliver innovative solutions that drive growth and success.
                         </p>
                         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
                             {companyStats.map((stat, index) => (
@@ -149,9 +88,9 @@ export default function About() {
                     <h2 className="text-2xl font-bold text-gray-800 sm:text-3xl">Our Mission</h2>
                     <div className="mt-3 max-w-2xl mx-auto">
                         <p className="text-gray-600">
-                            To empower businesses with cutting-edge technology solutions that drive innovation, 
-                            enhance efficiency, and create sustainable growth opportunities. We are committed to 
-                            understanding our clients' unique needs and delivering tailored solutions that exceed expectations.
+                            To empower businesses with cutting-edge technology solutions that drive innovation&#44; 
+                            enhance efficiency&#44; and create sustainable growth opportunities. We are committed to 
+                            understanding our clients&apos; unique needs and delivering tailored solutions that exceed expectations.
                         </p>
                     </div>
                 </div>
@@ -181,16 +120,16 @@ export default function About() {
                     <div className="order-2 md:order-1">
                         <h2 className="text-2xl font-bold text-gray-800 sm:text-3xl mb-4">Our History</h2>
                         <p className="text-gray-600 mb-4">
-                            Founded with a vision to bridge the gap between businesses and technology, Quira Resource has grown 
+                            Founded with a vision to bridge the gap between businesses and technology&#44; Quira Resource has grown 
                             from a small team of passionate technologists to a comprehensive IT solutions provider. 
                         </p>
                         <p className="text-gray-600 mb-4">
-                            Over the years, we've successfully delivered hundreds of projects across multiple industries, 
-                            helping our clients navigate digital transformation, optimize operations, and create exceptional 
+                            Over the years&lsquo; we&apos;ve successfully delivered hundreds of projects across multiple industries&#44; 
+                            helping our clients navigate digital transformation&#44; optimize operations&#44; and create exceptional 
                             user experiences.
                         </p>
                         <p className="text-gray-600">
-                            Today, we continue to expand our capabilities and serve clients across four countries, maintaining 
+                            Today&#44; we continue to expand our capabilities and serve clients across four countries&#44; maintaining 
                             our commitment to excellence and innovation in everything we do.
                         </p>
                     </div>
@@ -212,7 +151,7 @@ export default function About() {
                         Ready to transform your business?
                     </h2>
                     <p className="text-indigo-100 mb-6 max-w-xl mx-auto">
-                        Let's collaborate to create customized solutions that address your unique challenges and help you achieve your goals.
+                        Let&apos;s collaborate to create customized solutions that address your unique challenges and help you achieve your goals.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/service" className="inline-block py-3 px-6 text-center text-indigo-600 font-medium bg-white rounded-lg shadow hover:bg-indigo-50 transition duration-150">
