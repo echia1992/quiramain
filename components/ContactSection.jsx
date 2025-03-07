@@ -1,4 +1,87 @@
- const ContactSection =() =>{
+"use client"
+import { useState } from "react";
+import toast from "react-hot-toast";
+
+ 
+const ContactSection = () =>
+{
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        company: "",
+        message: ""
+    });
+
+        const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        
+        // Basic validation
+        if (!formData.name || !formData.email || !formData.message) {
+            toast.error("Please fill all required fields");
+            return;
+        }
+        
+        setIsSubmitting(true);
+        const loadingToast = toast.loading(
+            "Submitting your request...",
+            { position: "top-center" }
+        );
+        
+        try {
+            const form = new FormData();
+            
+            // Append all form fields
+            Object.entries(formData).forEach(([key, value]) => {
+                form.append(key, value);
+            });
+            
+            form.append("formType", "contact"); 
+            
+            const response = await fetch("/api/send-email", {
+                method: "POST",
+                body: form,
+            });
+            
+            if (!response.ok) {
+                const error = await response.json();
+                throw new Error(error.message || "Failed to send email");
+            }
+            
+            // Success
+            toast.dismiss(loadingToast);
+            toast.success("Message sent successfully! We'll get back to you soon.", {
+                duration: 5000,
+                position: "top-center",
+            });
+            
+            // Reset form
+            setFormData({
+                name: "",
+                email: "",
+                company: "",
+                message: ""
+            });
+            
+        } catch (error) {
+            toast.dismiss(loadingToast);
+            toast.error("There was an error submitting the form. Please try again.", {
+                duration: 5000,
+                position: "top-center",
+            });
+            console.error("Form submission error:", error);
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 
         const contactMethods = [
             {
@@ -40,7 +123,7 @@
                                 Let us know how we can help to transform your business
                             </p>
                             <p>
-                                We’re here to help and answer any question you might have, We look forward to hearing from you! Please fill out the form, or use the contact information bellow .
+                                We&apos;re here to help and answer any question you might have, We look forward to hearing from you! Please fill out the form, or use the contact information bellow .
                             </p>
                             <div>
                                 <ul className="mt-6 flex flex-wrap gap-x-10 gap-y-6 items-center">
@@ -59,51 +142,67 @@
                         </div>
                         <div className="flex-1 mt-12 sm:max-w-lg lg:max-w-md">
                             <form
-                                onSubmit={(e) => e.preventDefault()}
-                                className="space-y-5"
+                            onSubmit={handleSubmit}
+                            className="space-y-5"
+                        >
+                            <div>
+                                <label className="font-medium">
+                                    Full name
+                                </label>
+                                <input
+                                    type="text"
+                                    required
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                                />
+                            </div>
+                            <div>
+                                <label className="font-medium">
+                                    Email
+                                </label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    required
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                                />
+                            </div>
+                            <div>
+                                <label className="font-medium">
+                                    Company
+                                </label>
+                                <input
+                                    type="text"
+                                    name="company"
+                                    value={formData.company}
+                                    onChange={handleChange}
+                                    className="w-full mt-2 px-3 capitalize py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                                />
+                            </div>
+                            <div>
+                                <label className="font-medium">
+                                    Message
+                                </label>
+                                <textarea 
+                                    name="message" 
+                                    required 
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                                ></textarea>
+                            </div>
+                            <button
+                                type="submit"
+                                disabled={isSubmitting}
+                                className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150 disabled:opacity-70"
                             >
-                                <div>
-                                    <label className="font-medium">
-                                        Full name
-                                    </label>
-                                    <input
-                                        type="text"
-                                        required
-                                        className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                                    />
-                                </div>
-                                <div>
-                                    <label className="font-medium">
-                                        Email
-                                    </label>
-                                    <input
-                                        type="email"
-                                        required
-                                        className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                                    />
-                                </div>
-                                <div>
-                                    <label className="font-medium">
-                                        Company
-                                    </label>
-                                    <input
-                                        type="text"
-                                        required
-                                        className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                                    />
-                                </div>
-                                <div>
-                                    <label className="font-medium">
-                                        Message
-                                    </label>
-                                    <textarea required className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
-                                </div>
-                                <button
-                                    className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
-                                >
-                                    Submit
-                                </button>
-                            </form>
+                                {isSubmitting ? "Submitting..." : "Submit"}
+                            </button>
+                        </form>
                         </div>
                     </div>
                 </div>
