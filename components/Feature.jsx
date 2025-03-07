@@ -113,12 +113,12 @@ import Link from 'next/link';
 
                 {/* Category Tabs */}
                 <div className="flex justify-center mb-12 border-b">
-                    <div className="flex space-x-2 overflow-x-auto pb-2 sm:justify-center">
+                    <div className="flex space-x-1  px-4 pb-2 sm:justify-center">
                         {categories.map((category) => (
                             <button
                                 key={category.id}
                                 onClick={() => setActiveTab(category.id)}
-                                className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors duration-300 ${
+                                className={`sm:px-4 px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-300 ${
                                     activeTab === category.id
                                         ? 'bg-indigo-600 text-white'
                                         : 'text-gray-500 bg-gray-100 hover:bg-gray-200'
@@ -131,7 +131,7 @@ import Link from 'next/link';
                 </div>
 
                 {/* Features Grid */}
-                <div className="mt-12">
+                <div className="mt-12 px-3.5" >
                     <ul className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 px-2">
                         {filteredFeatures.map((item, idx) => (
                             <li key={idx} className="relative group">
